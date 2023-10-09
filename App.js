@@ -11,10 +11,6 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import ClassMainForeignCurrency from './src/components/ClassMainForeignCurrency';
 import FunctionMainForeignCurrency from './src/components/FunctionMainForeignCurrency';
 
-
-
-
-
 // CREATE
 // Create Native Stack
 const Stack = createNativeStackNavigator();
@@ -26,8 +22,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home"      component={HomeScreen}    options={{ title: "Anasayfa" }} />
-        <Stack.Screen name="ClassMainForeignCurrency" component={ClassMainForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
+        <Stack.Screen  name="Home"                        component={HomeScreen}                  options={{ title: "Anasayfa" }} />
+        <Stack.Screen  name="ClassMainForeignCurrency"    component={ClassMainForeignCurrency}    options={{ title: "Class ForeignCurrency Alanı" }} />
          <Stack.Screen name="FunctionMainForeignCurrency" component={FunctionMainForeignCurrency} options={{ title: "Function ForeignCurrency Alanı" }} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -55,7 +51,6 @@ const HomeScreen = ({ navigation,route }) => {
     </View> // common View
   ); //end return 
 } //end HomeScreen
-
 
 // EXPORT
 export default App;

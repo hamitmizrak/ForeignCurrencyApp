@@ -4,7 +4,7 @@ import { StyleSheet, Text, TextInput, View } from 'react-native';
 // CLASS 
 function FunctionCurrencyChange () {
 
-
+    // STATE
     const [tryCurrency, setTryCurrency] = useState(null);
     const [usdCurrency, setUsdCurrency] = useState(null);
     const [eurCurrency, setEurCurrency] = useState(null);
@@ -33,7 +33,6 @@ function FunctionCurrencyChange () {
     )  //end return
 } //end ClassCurrencyChange
 
-
 // CSS
 const styles = StyleSheet.create({
     currencyCss: {
@@ -49,7 +48,6 @@ const styles = StyleSheet.create({
         marginTop: 20
     }
 });
-
 
 // EXPORT
 export default FunctionCurrencyChange;

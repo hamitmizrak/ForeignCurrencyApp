@@ -1,8 +1,10 @@
 
 import { StyleSheet, Text, View } from 'react-native';
 
+// FUNCTION
 export default function FooterForeignCurrency() {
-    
+
+  // RETURN
   return (
     <View style={styles.container}>
       <Text style={styles.headerText}>Footer App</Text>
@@ -10,6 +12,7 @@ export default function FooterForeignCurrency() {
   );
 }
 
+// STYLES
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -10,21 +10,20 @@ class ClassCurrencyChange extends Component {
 
         // STATE
         this.state = {
-            try: "",
-            usd: "",
-            eur: "",
-            inputData: ""
+            tryCurrency: "",
+            usdCurrency: "",
+            eurCurrency: "",
+            inputData: "" // input data
         }
-
         // BIND
     }
-
 
     // RENDER
     render() {
 
         // object destructing
         const { currencyCss, inputCss, textCss } = styles;
+        const {tryCurrency} = this.state;
 
         // RETURN
         return (
@@ -39,14 +38,13 @@ class ClassCurrencyChange extends Component {
                     }}
                     value={this.state.inputData}
                 />
-                <Text style={textCss}>TRY: {this.state.try}</Text>
-                <Text style={textCss}>USD: {this.state.usd}</Text>
-                <Text style={textCss}>EUR: {this.state.eur}</Text>
+                <Text style={textCss}>TRY: {tryCurrency}</Text>
+                <Text style={textCss}>USD: {this.state.usdCurrency}</Text>
+                <Text style={textCss}>EUR: {this.state.eurCurrency}</Text>
             </View>
         )  //end return
     }  //end render
 } //end ClassCurrencyChange
-
 
 // CSS
 const styles = StyleSheet.create({
@@ -63,7 +61,6 @@ const styles = StyleSheet.create({
         marginTop: 20
     }
 });
-
 
 // EXPORT
 export default ClassCurrencyChange;
