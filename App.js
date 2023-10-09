@@ -1,20 +1,57 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// Routing
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function App() {
+// import { StatusBar } from 'expo-status-bar';
+
+// React native
+import { Button, StyleSheet, Text, View } from 'react-native';
+
+// Function Calculator
+import ClassForeignCurrency from './src/components/FunctionForeignCurrency';
+
+
+// CREATE
+// Create Native Stack
+const Stack = createNativeStackNavigator();
+
+//FUNCTION
+// 1.YOL   const App = () => { }
+// 2.YOL   function App() {}
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home"      component={HomeScreen}    options={{ title: "Anasayfa" }} />
+        <Stack.Screen name="ClassForeignCurrency" component={ClassForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
+        {/* <Stack.Screen name="FunctionForeignCurrency" component={FunctionForeignCurrency} options={{ title: "Function ForeignCurrency Alanı" }} /> */}
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+///////////////////////////////////////
+// BUTTON HomeScreen
+const HomeScreen = ({ navigation,route }) => {
+  return (
+    <View>
+
+      {/* Class  Foreign Currency */}
+      <Button
+        title='Döviz Class'
+        color="orange"
+        onPress={() => navigation.navigate('ClassForeignCurrency', { name: ' Component Class Foreign Currency' })} />
+
+      {/* Function  Foreign Currency  */}
+      {/* <Button
+        title='Döviz Function'
+        color="blue"
+        onPress={() => navigation.navigate('FunctionForeignCurrency', { name: ' Component Function ForeignCurrency' })} /> */}
+
+    </View> // common View
+  ); //end return 
+} //end HomeScreen
+
+
+// EXPORT
+export default App;
