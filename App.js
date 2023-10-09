@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 // Function Calculator
-import ClassForeignCurrency from './src/components/FunctionForeignCurrency';
+import MainForeignCurrency from './src/components/MainForeignCurrency';
 
 
 // CREATE
@@ -23,7 +23,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home"      component={HomeScreen}    options={{ title: "Anasayfa" }} />
-        <Stack.Screen name="ClassForeignCurrency" component={ClassForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
+        <Stack.Screen name="MainForeignCurrency" component={MainForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
         {/* <Stack.Screen name="FunctionForeignCurrency" component={FunctionForeignCurrency} options={{ title: "Function ForeignCurrency Alanı" }} /> */}
       </Stack.Navigator>
     </NavigationContainer>
