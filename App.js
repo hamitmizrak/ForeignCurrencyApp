@@ -8,7 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 // Function Calculator
-import MainForeignCurrency from './src/components/MainForeignCurrency';
+import ClassMainForeignCurrency from './src/components/ClassMainForeignCurrency';
+import FunctionMainForeignCurrency from './src/components/FunctionMainForeignCurrency';
+
+
+
 
 
 // CREATE
@@ -23,8 +27,8 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home"      component={HomeScreen}    options={{ title: "Anasayfa" }} />
-        <Stack.Screen name="MainForeignCurrency" component={MainForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
-        {/* <Stack.Screen name="FunctionForeignCurrency" component={FunctionForeignCurrency} options={{ title: "Function ForeignCurrency Alanı" }} /> */}
+        <Stack.Screen name="ClassMainForeignCurrency" component={ClassMainForeignCurrency} options={{ title: "Class ForeignCurrency Alanı" }} />
+         <Stack.Screen name="FunctionMainForeignCurrency" component={FunctionMainForeignCurrency} options={{ title: "Function ForeignCurrency Alanı" }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -40,13 +44,13 @@ const HomeScreen = ({ navigation,route }) => {
       <Button
         title='Döviz Class'
         color="orange"
-        onPress={() => navigation.navigate('ClassForeignCurrency', { name: ' Component Class Foreign Currency' })} />
+        onPress={() => navigation.navigate('ClassMainForeignCurrency', { name: ' Component Class Foreign Currency' })} />
 
       {/* Function  Foreign Currency  */}
-      {/* <Button
+        <Button
         title='Döviz Function'
         color="blue"
-        onPress={() => navigation.navigate('FunctionForeignCurrency', { name: ' Component Function ForeignCurrency' })} /> */}
+        onPress={() => navigation.navigate('FunctionMainForeignCurrency', { name: ' Component Function ForeignCurrency' })} />
 
     </View> // common View
   ); //end return 

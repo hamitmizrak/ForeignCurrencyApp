@@ -1,12 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native';
 import HeaderForeignCurrency from './HeaderForeignCurrency';
 import FooterForeignCurrency from './FooterForeingCurrency';
+import ClassCurrencyChange from './ClassCurrencyChange';
 
-export default function MainForeignCurrency() {
+export default function ClassMainForeignCurrency() {
     
   return (
     <View style={styles.container}>
       <HeaderForeignCurrency headerTextData='Header Currency Data Change' />
+
+      <ClassCurrencyChange />
       
       <FooterForeignCurrency footerTextData='@copy; Bütün haklar saklıdır'/>
     </View>
