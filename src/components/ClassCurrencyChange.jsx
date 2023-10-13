@@ -22,8 +22,8 @@ class ClassCurrencyChange extends Component {
             inputData: "", // input data
             rates: [],
         }
-        // debugger;
-        // console.log("Constructor");
+         debugger;
+         console.log("Constructor");
         // BIND
         this.getCurrencyRates=this.getCurrencyRates.bind(this);
     }
