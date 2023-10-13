@@ -4,7 +4,7 @@ import { StyleSheet, Text, TextInput, View } from 'react-native';
 // CLASS 
 class ClassCurrencyChange extends Component {
 
-    // cosntructor
+    // constructor
     constructor(props) {
         super(props);
 
@@ -14,10 +14,13 @@ class ClassCurrencyChange extends Component {
             usdCurrency: "",
             eurCurrency: "",
             inputData: "" // input data
+            
         }
+        debugger;
+        console.log("Constructor");
         // BIND
     }
-
+  
     // RENDER
     render() {
 

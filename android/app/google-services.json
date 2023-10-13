@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148364453417",
+    "project_id": "react-native-crud-eaccd",
+    "storage_bucket": "react-native-crud-eaccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148364453417:android:625c60fe78b352bc335e38",
+        "android_client_info": {
+          "package_name": "com.android.currency"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWTBkf9-i7ridzwhAaiaU1aBTLgBq97gU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

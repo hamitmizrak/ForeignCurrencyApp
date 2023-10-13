@@ -1,6 +1,6 @@
 // Routing
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createNativeStackNavigator  } from '@react-navigation/native-stack';
 
 // import { StatusBar } from 'expo-status-bar';
 
@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 // Function Calculator
-import ClassMainForeignCurrency from './src/components/ClassMainForeignCurrency';
+import ClassMainForeignCurrency    from './src/components/ClassMainForeignCurrency';
 import FunctionMainForeignCurrency from './src/components/FunctionMainForeignCurrency';
 
 // CREATE

@@ -10,7 +10,6 @@ function FunctionCurrencyChange () {
     const [eurCurrency, setEurCurrency] = useState(null);
     const [inputData, setInputData] = useState(null);
 
-
     // object destructing
     const { currencyCss, inputCss, textCss } = styles;
 
