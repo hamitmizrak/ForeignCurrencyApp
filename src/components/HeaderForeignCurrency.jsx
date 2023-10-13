@@ -7,7 +7,7 @@ export default function HeaderForeignCurrency() {
   // RETURN
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>Header App</Text>
+      <Text style={styles.headerText}>Döviz Uygulaması</Text>
     </View>
   );
 }

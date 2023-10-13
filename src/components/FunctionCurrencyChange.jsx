@@ -25,9 +25,9 @@ function FunctionCurrencyChange () {
                 }}
                 value={inputData}
             />
+             <Text style={textCss}>EUR: {eurCurrency}</Text>
             <Text style={textCss}>TRY: {tryCurrency}</Text>
             <Text style={textCss}>USD: {usdCurrency}</Text>
-            <Text style={textCss}>EUR: {eurCurrency}</Text>
         </View>
     )  //end return
 } //end ClassCurrencyChange

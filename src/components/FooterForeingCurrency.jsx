@@ -7,7 +7,7 @@ export default function FooterForeignCurrency() {
   // RETURN
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>Footer App</Text>
+      <Text style={styles.headerText}>&copy; 2022 - {new Date().getFullYear()}</Text>
     </View>
   );
 }

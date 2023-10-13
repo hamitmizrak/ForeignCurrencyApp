@@ -7,6 +7,12 @@ debug
 currency api : https://fixer.io
 ```
 
+package.json
+npm i axios --save
+
+
+
+
 # Android veya IOS için build işlemlerinde 
 // npx expo prebuild
 ```sh 
@@ -31,7 +37,7 @@ DİKKAT: unuttmmmaaa: https olarak yazma. onun yerine http olarak yazmalısın.
 
 *Base URL*  `http://data.fixer.io/api/`
 *API.KEY*   `http://data.fixer.io/api/latest? access_key = 7c6c3ff249dbeb08e0c98e8fe6b869f2`
-*SYMBOL*  `http://data.fixer.io/api/latest?access_key=0a07761e47ce11c343b158db8f1a667f&symbols=EUR,USD`
+*SYMBOL*  `http://data.fixer.io/api/latest?access_key=0a07761e47ce11c343b158db8f1a667f&symbols=EUR,USD,TRY`
 
 ```sh 
 package.json
